@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.LST
+*.log
+*.opendb
+*.db
+*.cache
+src/.vs/test/v15/.suo
