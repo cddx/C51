@@ -69,9 +69,9 @@
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <NMakeBuildCommandLine>nmake</NMakeBuildCommandLine>
-    <NMakeCleanCommandLine>nmake</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>nmake</NMakeReBuildCommandLine>
+    <NMakeBuildCommandLine>nmake -nologo -fmakefile.mak -i</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>nmake -nologo -fmakefile.mak -i clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake -nologo -fmakefile.mak -i all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -89,6 +89,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="func.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

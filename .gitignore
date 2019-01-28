@@ -56,3 +56,4 @@ dkms.conf
 *.db
 *.cache
 src/.vs/test/v15/.suo
+*.M51
