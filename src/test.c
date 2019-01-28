@@ -39,7 +39,7 @@ void main(void)
 	------------------------------------------------*/
 	while (1)
 	{
-		//P1 ^= 0x01; 				/* Toggle P1.0 each time we print */
+		P1 ^= 0x01; 				/* Toggle P1.0 each time we print */
 		printf("Hello World\n");	/* Print "Hello World" */
 	}
 }
