@@ -21,5 +21,8 @@
     <ClCompile Include="func.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="f1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

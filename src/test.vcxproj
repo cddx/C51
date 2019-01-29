@@ -89,6 +89,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="f1.c" />
     <ClCompile Include="func.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
