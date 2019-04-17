@@ -73,6 +73,7 @@
     <NMakeCleanCommandLine>nmake -nologo -fmakefile.mak -i clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>nmake -nologo -fmakefile.mak -i all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>C:\Keil\C51\INC;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>nmake -nologo -f makefile.mak all</NMakeBuildCommandLine>
