@@ -1,14 +1,15 @@
 #include <REG52.H>
 #include"vstrick.h"
-extern void func(void);
-extern void f1(void);
-extern int x;
+#include"f1.h"
+#include"f2.h"
+
 void main(void)
 {
 	int x;
 	x = 10;
 	x++;
 	f1();
+	f2();
 	P1 ^= 1;
 	while (1)
 	{
