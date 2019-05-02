@@ -1,14 +1,18 @@
 #include <REG52.H>
-extern void func(void);
-extern void f1(void);
-extern int x;
+#include "vstrick.h"
+#include "f1.h"
+#include "f2.h"
+
 void main(void)
 {
+	int x;
 	x = 10;
-	func();
+	x++;
 	f1();
+	f2();
 	while (1)
 	{
-		//P1 ^= 0x01; 				/* Toggle P1.0 each time we print */
+		/* Toggle P1.0 each time we print */
+		P1 ^= 0x01; 
 	}
 }

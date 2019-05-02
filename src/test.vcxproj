@@ -72,7 +72,8 @@
     <NMakeBuildCommandLine>nmake -nologo -fmakefile.mak -i</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>nmake -nologo -fmakefile.mak -i clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>nmake -nologo -fmakefile.mak -i all</NMakeReBuildCommandLine>
-    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>_DEBUG;__VSTRICK__;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>C:\Keil\C51\INC;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>nmake -nologo -f makefile.mak all</NMakeBuildCommandLine>
@@ -90,8 +91,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="f1.c" />
-    <ClCompile Include="func.c" />
+    <ClCompile Include="f2.c" />
     <ClCompile Include="test.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="f1.h" />
+    <ClInclude Include="f2.h" />
+    <ClInclude Include="vstrick.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
